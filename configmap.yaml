@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: example-app-1
+  name: python-application
   namespace: app
 data:
   config.json: |
