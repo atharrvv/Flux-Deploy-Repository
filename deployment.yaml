@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: python-application
-        image: python-app:latest
+        image: python-app:0.0.0.1
         ports:
         - containerPort: 5000
         volumeMounts:
