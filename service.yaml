@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   namespace: app
-  name: example-app-1
+  name: python-application
   labels:
-    app: example-app-1
+    app: python-application
 spec:
   type: ClusterIP
   selector:
-    app: example-app-1
+    app: python-application
   ports:
     - protocol: TCP
       name: http
