@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: example-app-1
+  name: python-application
   labels:
-    app: example-app-1
+    app: python-application
   namespace: app
 spec:
   selector:
     matchLabels:
-      app: example-app-1
+      app: python-application
   replicas: 2
   strategy:
     type: RollingUpdate
@@ -18,11 +18,11 @@ spec:
   template:
     metadata:
       labels:
-        app: example-app-1
+        app: python-application
     spec:
       containers:
-      - name: example-app-1
-        image: example-app-1:0.0.2
+      - name: python-application
+        image: python-app
         ports:
         - containerPort: 5000
         volumeMounts:
@@ -31,4 +31,4 @@ spec:
       volumes:
       - name: config-volume
         configMap:
-          name: example-app-1
+          name: python-application
