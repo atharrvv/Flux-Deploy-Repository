@@ -22,6 +22,6 @@ spec:
     spec:
       containers:
       - name: python-application
-        image: docker.io/eatherv/python-app:0.0.0.3
+        image: docker.io/eatherv/python-application:0.0.5
         ports:
         - containerPort: 5000
