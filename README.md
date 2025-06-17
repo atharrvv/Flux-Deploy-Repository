@@ -386,7 +386,7 @@ python-application-cc9d4f4fc-xm786   1/1     Running   0          2m2s
 
 ```bash
 kubectl -n flux-system create secret generic slack-url \
---from-literal=address=https://hooks.slack.com/services/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
+--from-literal=address={webhook_URL}
 ```
 
 ### Provider.yml
