@@ -22,6 +22,6 @@ spec:
     spec:
       containers:
       - name: python-application
-        image: docker.io/eatherv/python-application:0.0.12 #{"$imagepolicy": "flux-system:python"}
+        image: docker.io/eatherv/python-application:0.0.13 #{"$imagepolicy": "flux-system:python"}
         ports:
         - containerPort: 5000
